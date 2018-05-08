@@ -1,0 +1,121 @@
+﻿html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: auto;
+    padding: 0px;
+    background: #708090;
+    max-width: 960px;
+    display: block;
+}
+
+img {
+    border-radius: 50%;
+    width:80px;
+    height:96px;
+    margin-bottom: 5px;
+}
+/* makes the image in the header/profile align in the middle */
+#profile img .align-center {
+    display: inline-block;
+    margin-bottom: 1em;
+    border-radius: 50%;
+}
+
+#profile{
+    margin-bottom: 4em;
+}
+
+#page {
+    background-color: #3e4444;
+}
+
+.container {
+    overflow: hidden;
+    margin: 0em auto;
+    width: 100%;
+}
+
+#header {
+    background-color: #3e4444;
+    float: left;
+    width: 25%;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 3em 0em;
+}
+
+#main {
+    background-color: #292929;
+    float: left;
+    width: 75%;
+    text-align: center;
+    display: block;
+}
+
+#footer {   
+    text-align: center;
+    background-color: #4CAF50;
+    clear: both;
+    font-size: 80%;
+    margin:auto auto;
+    display: block;
+}
+
+p {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*removes the underline of links*/
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+}
+
+h1, h2 {
+    color: #4CAF50;
+}
+
+/* Clear floats after the columns */
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* CSS regarding the MENU */
+
+.sidenav {
+    width: 100%; 
+    display: block;
+}
+
+.sidenav a {
+    background-color: #3e4444; 
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.sidenav a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.sidenav a.active {
+    background-color: #4CAF50; /* Add a green color to the "active/current" link */
+    color: white;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 800px) {
+    #header, #main {
+        width: 100%;
+        padding: 0;
+    }
+}
